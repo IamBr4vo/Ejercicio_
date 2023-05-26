@@ -4,6 +4,10 @@ public class EjercicioSeis {
         Scanner input = new Scanner(System.in);
         System.out.println("Ingrese un numero");
         int num = input.nextInt();
+        while(num<=0){
+            System.out.print("numero incorrecto, digite un numero entero ");
+            num = input.nextInt();
+        }
         Multiplicacion(num);
     }
     public static void Multiplicacion(int num) {

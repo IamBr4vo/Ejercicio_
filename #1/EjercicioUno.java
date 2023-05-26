@@ -4,6 +4,10 @@ public class EjercicioUno{
         Scanner input = new Scanner(System.in);
         System.out.println("ingrese un numero");
         int num = input.nextInt();
+        while(num<=0){
+            System.out.print("numero incorrecto, digite un numero entero ");
+            num = input.nextInt();
+        }
         if(num%2==0){
             System.out.println("El numero es par");
          }else{
